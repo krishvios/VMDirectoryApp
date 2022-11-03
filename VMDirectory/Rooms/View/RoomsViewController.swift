@@ -8,6 +8,7 @@
 import UIKit
 
 class RoomsViewController: UITableViewController {
+    
     var activityIndicator: UIActivityIndicatorView = {
         let activityView = UIActivityIndicatorView(style: .large)
         return activityView
@@ -37,7 +38,7 @@ class RoomsViewController: UITableViewController {
         viewModel.hideLoading = {
             DispatchQueue.main.async { self.activityIndicator.stopAnimating() }
         }
-        viewModel.getData()
+        viewModel.fetchRoomsData()
     }
 
     // MARK: - Table view data source

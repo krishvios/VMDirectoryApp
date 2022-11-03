@@ -49,7 +49,6 @@ struct Person: Codable {
         
     }
     
-    
     init(createdAt: String?,firstName: String?, avatar: String?, lastName: String?, email: String?, jobtitle: String?, favouriteColor: String?, id: String?) {
         self.createdAt = createdAt
         self.firstName = firstName
@@ -60,4 +59,5 @@ struct Person: Codable {
         self.favouriteColor = favouriteColor
         self.id = id
     }
+    
 }

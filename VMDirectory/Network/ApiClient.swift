@@ -9,13 +9,11 @@ import Foundation
 
 public struct ApiClient {
     
-    static let baseURLStr = "https://61e947967bc0550017bc61bf.mockapi.io/api/v1"
-    
     static func getPeopleDataFromServer( complete: @escaping (_ success: Bool, _ data: [Person]? )->() ){
         DispatchQueue.global().async {
             sleep(2)
             var webServiceData: [Person] = [Person]()
-            let urlString = baseURLStr + "/people"
+            let urlString = Constants.baseURLStr + "/people"
 
                 if let url = URL(string: urlString) {
                     if let jsonData = try? Data(contentsOf: url) {
@@ -46,7 +44,7 @@ public struct ApiClient {
             DispatchQueue.global().async {
                 sleep(2)
                 var webServiceData: [Room] = [Room]()
-                let urlString = baseURLStr + "/rooms"
+                let urlString = Constants.baseURLStr + "/rooms"
 
                     if let url = URL(string: urlString) {
                         if let jsonData = try? Data(contentsOf: url) {

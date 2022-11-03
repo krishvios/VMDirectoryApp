@@ -8,11 +8,14 @@
 import Foundation
 
 class RoomsViewModel {
-    var datas: [Room] = [Room]()
+    
+    var rooms: [Room] = [Room]()
     var reloadTableView: (()->())?
     var showError: (()->())?
     var showLoading: (()->())?
     var hideLoading: (()->())?
+    private let getRoomsRequest = RoomsRequest()
+    private var task: URLSessionDataTask?
 
     private var cellViewModels: [RoomsListCellViewModel] = [RoomsListCellViewModel]() {
         didSet {
@@ -20,17 +23,17 @@ class RoomsViewModel {
         }
     }
 
-    func getData(){
+    func fetchRoomsData(){
         showLoading?()
-        ApiClient.getRoomsDataFromServer { (success, data) in
+        self.task = self.getRoomsRequest.query(success: { [weak self] (response) in
+            self?.task = nil
+            self?.createCell(datas: response.rooms)
+            self?.hideLoading?()
+        }, failure: { [weak self]  (error) in
+            guard let `self` = self else { return }
+            self.task = nil
             self.hideLoading?()
-            if success {
-                self.createCell(datas: data!)
-                self.reloadTableView?()
-            } else {
-                self.showError?()
-            }
-        }
+        })
     }
     
     var numberOfCells: Int {
@@ -43,7 +46,7 @@ class RoomsViewModel {
     }
     
     func createCell(datas: [Room]){
-        self.datas = datas
+        self.rooms = datas
         var vms = [RoomsListCellViewModel]()
         for data in datas {
             vms.append(RoomsListCellViewModel(createdAt: data.createdAt ?? "",
@@ -53,4 +56,5 @@ class RoomsViewModel {
         }
         cellViewModels = vms
     }
+    
 }

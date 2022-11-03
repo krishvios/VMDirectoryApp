@@ -38,7 +38,7 @@ class PeopleViewController: UITableViewController {
         viewModel.hideLoading = {
             DispatchQueue.main.async { self.activityIndicator.stopAnimating() }
         }
-        viewModel.getData()
+        viewModel.fetchPeopleData()
     }
 
     // MARK: - Table view data source
@@ -60,4 +60,5 @@ class PeopleViewController: UITableViewController {
         let cellVM = viewModel.getCellViewModel( at: indexPath )
         self.navigationController?.pushViewController(PersonDetailsViewControllerFactory().createPersonDetailsViewControllerWith(item: cellVM), animated: true)
     }
+    
 }

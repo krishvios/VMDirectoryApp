@@ -21,7 +21,6 @@
 		1BF4D3D628ED206800AEBDB5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1BF4D3D428ED206800AEBDB5 /* Main.storyboard */; };
 		1BF4D3D828ED206D00AEBDB5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1BF4D3D728ED206D00AEBDB5 /* Assets.xcassets */; };
 		1BF4D3DB28ED206D00AEBDB5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1BF4D3D928ED206D00AEBDB5 /* LaunchScreen.storyboard */; };
-		1BF4D3E628ED206D00AEBDB5 /* VMDirectoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BF4D3E528ED206D00AEBDB5 /* VMDirectoryTests.swift */; };
 		1BF4D3F028ED206D00AEBDB5 /* VMDirectoryUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BF4D3EF28ED206D00AEBDB5 /* VMDirectoryUITests.swift */; };
 		1BF4D3F228ED206D00AEBDB5 /* VMDirectoryUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BF4D3F128ED206D00AEBDB5 /* VMDirectoryUITestsLaunchTests.swift */; };
 		1BF4D40328ED21E600AEBDB5 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BF4D40228ED21E600AEBDB5 /* TabBarController.swift */; };
@@ -32,6 +31,32 @@
 		1BF4D48D28EED2BE00AEBDB5 /* RoomsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BF4D48C28EED2BE00AEBDB5 /* RoomsViewController.swift */; };
 		1BF4D49228EEE42C00AEBDB5 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BF4D49128EEE42C00AEBDB5 /* Person.swift */; };
 		1BF4D49428EEE43700AEBDB5 /* Room.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BF4D49328EEE43700AEBDB5 /* Room.swift */; };
+		C2242C4928FF55770024619E /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2242C4828FF55770024619E /* Constants.swift */; };
+		C2242D3429041BF60024619E /* PersonDetailsViewControllerFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2242D3329041BF60024619E /* PersonDetailsViewControllerFactory.swift */; };
+		C2BCF239290A8F1D00B2BC2F /* NSAttributedString+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2BCF238290A8F1D00B2BC2F /* NSAttributedString+Extensions.swift */; };
+		C2BCF23D290A937A00B2BC2F /* GenericErrorMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2BCF23C290A937A00B2BC2F /* GenericErrorMapper.swift */; };
+		C2BCF23F290A944800B2BC2F /* GenericCallConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2BCF23E290A944800B2BC2F /* GenericCallConfig.swift */; };
+		C2BCF241290A949500B2BC2F /* GenericResponseParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2BCF240290A949500B2BC2F /* GenericResponseParser.swift */; };
+		C2BCF243290A951900B2BC2F /* RequestBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2BCF242290A951900B2BC2F /* RequestBuilder.swift */; };
+		C2BCF247290A964D00B2BC2F /* AppRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2BCF246290A964D00B2BC2F /* AppRequest.swift */; };
+		C2BCF249290A965D00B2BC2F /* AppAPICall.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2BCF248290A965D00B2BC2F /* AppAPICall.swift */; };
+		C2BCF24B290A969C00B2BC2F /* AppAPIErrorMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2BCF24A290A969C00B2BC2F /* AppAPIErrorMapper.swift */; };
+		C2BCF24D290A96F100B2BC2F /* AppRequestBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2BCF24C290A96F100B2BC2F /* AppRequestBuilder.swift */; };
+		C2BCF24F290EBD4E00B2BC2F /* AppConstant.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2BCF24E290EBD4E00B2BC2F /* AppConstant.swift */; };
+		C2BCF251290ED02300B2BC2F /* PeopleRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2BCF250290ED02300B2BC2F /* PeopleRequest.swift */; };
+		C2BCF253290ED0BC00B2BC2F /* PeopleParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2BCF252290ED0BC00B2BC2F /* PeopleParser.swift */; };
+		C2BCF255290ED21600B2BC2F /* PeopleConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2BCF254290ED21600B2BC2F /* PeopleConfig.swift */; };
+		C2BCF257290FE0C400B2BC2F /* RoomsRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2BCF256290FE0C400B2BC2F /* RoomsRequest.swift */; };
+		C2BCF259290FE0F900B2BC2F /* PeopleResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2BCF258290FE0F900B2BC2F /* PeopleResponse.swift */; };
+		C2BCF25B290FE21500B2BC2F /* RoomsResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2BCF25A290FE21500B2BC2F /* RoomsResponse.swift */; };
+		C2BCF25D290FE22100B2BC2F /* RoomsParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2BCF25C290FE22100B2BC2F /* RoomsParser.swift */; };
+		C2BCF25F290FE22E00B2BC2F /* RoomsConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2BCF25E290FE22E00B2BC2F /* RoomsConfig.swift */; };
+		C2CCCB7F2913CEE4002BD362 /* PersonDetailsViewControllerFactoryMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2CCCB7E2913CEE4002BD362 /* PersonDetailsViewControllerFactoryMock.swift */; };
+		C2CCCB812913D138002BD362 /* PersonDetailsViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2CCCB802913D138002BD362 /* PersonDetailsViewModelTests.swift */; };
+		C2CCCB862913D82C002BD362 /* PeopleViewModelTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2CCCB852913D82C002BD362 /* PeopleViewModelTest.swift */; };
+		C2CCCB882913D853002BD362 /* MockPeopleRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2CCCB872913D853002BD362 /* MockPeopleRequest.swift */; };
+		C2CCCB8B29140F63002BD362 /* RoomsViewModelTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2CCCB8A29140F63002BD362 /* RoomsViewModelTest.swift */; };
+		C2CCCB8D29141008002BD362 /* MockRoomsRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2CCCB8C29141008002BD362 /* MockRoomsRequest.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,7 +94,6 @@
 		1BF4D3DA28ED206D00AEBDB5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1BF4D3DC28ED206D00AEBDB5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1BF4D3E128ED206D00AEBDB5 /* VMDirectoryTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VMDirectoryTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		1BF4D3E528ED206D00AEBDB5 /* VMDirectoryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VMDirectoryTests.swift; sourceTree = "<group>"; };
 		1BF4D3EB28ED206D00AEBDB5 /* VMDirectoryUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VMDirectoryUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1BF4D3EF28ED206D00AEBDB5 /* VMDirectoryUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VMDirectoryUITests.swift; sourceTree = "<group>"; };
 		1BF4D3F128ED206D00AEBDB5 /* VMDirectoryUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VMDirectoryUITestsLaunchTests.swift; sourceTree = "<group>"; };
@@ -81,6 +105,32 @@
 		1BF4D48C28EED2BE00AEBDB5 /* RoomsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoomsViewController.swift; sourceTree = "<group>"; };
 		1BF4D49128EEE42C00AEBDB5 /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
 		1BF4D49328EEE43700AEBDB5 /* Room.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Room.swift; sourceTree = "<group>"; };
+		C2242C4828FF55770024619E /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		C2242D3329041BF60024619E /* PersonDetailsViewControllerFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonDetailsViewControllerFactory.swift; sourceTree = "<group>"; };
+		C2BCF238290A8F1D00B2BC2F /* NSAttributedString+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSAttributedString+Extensions.swift"; sourceTree = "<group>"; };
+		C2BCF23C290A937A00B2BC2F /* GenericErrorMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenericErrorMapper.swift; sourceTree = "<group>"; };
+		C2BCF23E290A944800B2BC2F /* GenericCallConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenericCallConfig.swift; sourceTree = "<group>"; };
+		C2BCF240290A949500B2BC2F /* GenericResponseParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenericResponseParser.swift; sourceTree = "<group>"; };
+		C2BCF242290A951900B2BC2F /* RequestBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestBuilder.swift; sourceTree = "<group>"; };
+		C2BCF246290A964D00B2BC2F /* AppRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppRequest.swift; sourceTree = "<group>"; };
+		C2BCF248290A965D00B2BC2F /* AppAPICall.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppAPICall.swift; sourceTree = "<group>"; };
+		C2BCF24A290A969C00B2BC2F /* AppAPIErrorMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppAPIErrorMapper.swift; sourceTree = "<group>"; };
+		C2BCF24C290A96F100B2BC2F /* AppRequestBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppRequestBuilder.swift; sourceTree = "<group>"; };
+		C2BCF24E290EBD4E00B2BC2F /* AppConstant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConstant.swift; sourceTree = "<group>"; };
+		C2BCF250290ED02300B2BC2F /* PeopleRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeopleRequest.swift; sourceTree = "<group>"; };
+		C2BCF252290ED0BC00B2BC2F /* PeopleParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeopleParser.swift; sourceTree = "<group>"; };
+		C2BCF254290ED21600B2BC2F /* PeopleConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeopleConfig.swift; sourceTree = "<group>"; };
+		C2BCF256290FE0C400B2BC2F /* RoomsRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoomsRequest.swift; sourceTree = "<group>"; };
+		C2BCF258290FE0F900B2BC2F /* PeopleResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeopleResponse.swift; sourceTree = "<group>"; };
+		C2BCF25A290FE21500B2BC2F /* RoomsResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoomsResponse.swift; sourceTree = "<group>"; };
+		C2BCF25C290FE22100B2BC2F /* RoomsParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoomsParser.swift; sourceTree = "<group>"; };
+		C2BCF25E290FE22E00B2BC2F /* RoomsConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoomsConfig.swift; sourceTree = "<group>"; };
+		C2CCCB7E2913CEE4002BD362 /* PersonDetailsViewControllerFactoryMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonDetailsViewControllerFactoryMock.swift; sourceTree = "<group>"; };
+		C2CCCB802913D138002BD362 /* PersonDetailsViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonDetailsViewModelTests.swift; sourceTree = "<group>"; };
+		C2CCCB852913D82C002BD362 /* PeopleViewModelTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeopleViewModelTest.swift; sourceTree = "<group>"; };
+		C2CCCB872913D853002BD362 /* MockPeopleRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockPeopleRequest.swift; sourceTree = "<group>"; };
+		C2CCCB8A29140F63002BD362 /* RoomsViewModelTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoomsViewModelTest.swift; sourceTree = "<group>"; };
+		C2CCCB8C29141008002BD362 /* MockRoomsRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockRoomsRequest.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,6 +161,7 @@
 		1B26AF2928F01548006F1D95 /* Network */ = {
 			isa = PBXGroup;
 			children = (
+				C2BCF23A290A933400B2BC2F /* API Call */,
 				1B26AF2A28F0155C006F1D95 /* ApiClient.swift */,
 			);
 			path = Network;
@@ -164,6 +215,7 @@
 			children = (
 				1B26AF3228F02523006F1D95 /* UIViewController+Extensions.swift */,
 				1B36650F28F0641D005E8103 /* UIImage+Extension.swift */,
+				C2BCF238290A8F1D00B2BC2F /* NSAttributedString+Extensions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -191,6 +243,7 @@
 				1B26AF3928F04D57006F1D95 /* Cells */,
 				1BF4D48428EE884D00AEBDB5 /* PeopleViewController.swift */,
 				1B26AF3428F0335C006F1D95 /* PersonDetailsViewController.swift */,
+				C2242D3329041BF60024619E /* PersonDetailsViewControllerFactory.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -218,6 +271,7 @@
 		1BF4D3CD28ED206800AEBDB5 /* VMDirectory */ = {
 			isa = PBXGroup;
 			children = (
+				C2242C4728FF55690024619E /* Constants */,
 				1B26AF3128F024FF006F1D95 /* Extensions */,
 				1B26AF2928F01548006F1D95 /* Network */,
 				1BF4D3CE28ED206800AEBDB5 /* AppDelegate.swift */,
@@ -237,7 +291,9 @@
 		1BF4D3E428ED206D00AEBDB5 /* VMDirectoryTests */ = {
 			isa = PBXGroup;
 			children = (
-				1BF4D3E528ED206D00AEBDB5 /* VMDirectoryTests.swift */,
+				C2CCCB8929140F15002BD362 /* Rooms Tests */,
+				C2CCCB842913D548002BD362 /* People View Tests */,
+				C2CCCB822913D17C002BD362 /* Person Detail Tests */,
 			);
 			path = VMDirectoryTests;
 			sourceTree = "<group>";
@@ -257,6 +313,10 @@
 				1B26AF3028F01EAB006F1D95 /* ViewModel */,
 				1B26AF2C28F01E40006F1D95 /* Model */,
 				1B33197428EF58DB00602994 /* View */,
+				C2BCF250290ED02300B2BC2F /* PeopleRequest.swift */,
+				C2BCF252290ED0BC00B2BC2F /* PeopleParser.swift */,
+				C2BCF254290ED21600B2BC2F /* PeopleConfig.swift */,
+				C2BCF258290FE0F900B2BC2F /* PeopleResponse.swift */,
 			);
 			path = People;
 			sourceTree = "<group>";
@@ -267,8 +327,71 @@
 				1B26AF2F28F01E8A006F1D95 /* ViewModel */,
 				1B26AF2E28F01E80006F1D95 /* Model */,
 				1B26AF2D28F01E6E006F1D95 /* View */,
+				C2BCF256290FE0C400B2BC2F /* RoomsRequest.swift */,
+				C2BCF25C290FE22100B2BC2F /* RoomsParser.swift */,
+				C2BCF25E290FE22E00B2BC2F /* RoomsConfig.swift */,
+				C2BCF25A290FE21500B2BC2F /* RoomsResponse.swift */,
 			);
 			path = Rooms;
+			sourceTree = "<group>";
+		};
+		C2242C4728FF55690024619E /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				C2242C4828FF55770024619E /* Constants.swift */,
+				C2BCF24E290EBD4E00B2BC2F /* AppConstant.swift */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
+		C2BCF23A290A933400B2BC2F /* API Call */ = {
+			isa = PBXGroup;
+			children = (
+				C2BCF23B290A937000B2BC2F /* Generics */,
+				C2BCF246290A964D00B2BC2F /* AppRequest.swift */,
+				C2BCF248290A965D00B2BC2F /* AppAPICall.swift */,
+				C2BCF24A290A969C00B2BC2F /* AppAPIErrorMapper.swift */,
+				C2BCF24C290A96F100B2BC2F /* AppRequestBuilder.swift */,
+			);
+			path = "API Call";
+			sourceTree = "<group>";
+		};
+		C2BCF23B290A937000B2BC2F /* Generics */ = {
+			isa = PBXGroup;
+			children = (
+				C2BCF23C290A937A00B2BC2F /* GenericErrorMapper.swift */,
+				C2BCF23E290A944800B2BC2F /* GenericCallConfig.swift */,
+				C2BCF240290A949500B2BC2F /* GenericResponseParser.swift */,
+				C2BCF242290A951900B2BC2F /* RequestBuilder.swift */,
+			);
+			path = Generics;
+			sourceTree = "<group>";
+		};
+		C2CCCB822913D17C002BD362 /* Person Detail Tests */ = {
+			isa = PBXGroup;
+			children = (
+				C2CCCB7E2913CEE4002BD362 /* PersonDetailsViewControllerFactoryMock.swift */,
+				C2CCCB802913D138002BD362 /* PersonDetailsViewModelTests.swift */,
+			);
+			path = "Person Detail Tests";
+			sourceTree = "<group>";
+		};
+		C2CCCB842913D548002BD362 /* People View Tests */ = {
+			isa = PBXGroup;
+			children = (
+				C2CCCB852913D82C002BD362 /* PeopleViewModelTest.swift */,
+				C2CCCB872913D853002BD362 /* MockPeopleRequest.swift */,
+			);
+			path = "People View Tests";
+			sourceTree = "<group>";
+		};
+		C2CCCB8929140F15002BD362 /* Rooms Tests */ = {
+			isa = PBXGroup;
+			children = (
+				C2CCCB8A29140F63002BD362 /* RoomsViewModelTest.swift */,
+				C2CCCB8C29141008002BD362 /* MockRoomsRequest.swift */,
+			);
+			path = "Rooms Tests";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -402,24 +525,44 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C2BCF253290ED0BC00B2BC2F /* PeopleParser.swift in Sources */,
+				C2BCF249290A965D00B2BC2F /* AppAPICall.swift in Sources */,
 				1B26AF2828F0131C006F1D95 /* PersonListCellViewModel.swift in Sources */,
 				1BF4D48528EE884D00AEBDB5 /* PeopleViewController.swift in Sources */,
 				1BF4D40528ED220A00AEBDB5 /* CustomNavigationController.swift in Sources */,
+				C2BCF243290A951900B2BC2F /* RequestBuilder.swift in Sources */,
 				1B26AF3D28F050A7006F1D95 /* RoomsListCellViewModel.swift in Sources */,
 				1B33197628EF58FA00602994 /* PersonDetailsCell.swift in Sources */,
+				C2BCF255290ED21600B2BC2F /* PeopleConfig.swift in Sources */,
+				C2242C4928FF55770024619E /* Constants.swift in Sources */,
+				C2BCF24B290A969C00B2BC2F /* AppAPIErrorMapper.swift in Sources */,
+				C2BCF259290FE0F900B2BC2F /* PeopleResponse.swift in Sources */,
+				C2BCF25F290FE22E00B2BC2F /* RoomsConfig.swift in Sources */,
 				1BF4D48928EE88E400AEBDB5 /* RoomsViewModel.swift in Sources */,
+				C2242D3429041BF60024619E /* PersonDetailsViewControllerFactory.swift in Sources */,
+				C2BCF247290A964D00B2BC2F /* AppRequest.swift in Sources */,
+				C2BCF23D290A937A00B2BC2F /* GenericErrorMapper.swift in Sources */,
 				1B26AF3528F0335C006F1D95 /* PersonDetailsViewController.swift in Sources */,
 				1BF4D48D28EED2BE00AEBDB5 /* RoomsViewController.swift in Sources */,
 				1BF4D49428EEE43700AEBDB5 /* Room.swift in Sources */,
 				1BF4D3CF28ED206800AEBDB5 /* AppDelegate.swift in Sources */,
 				1B26AF2B28F0155C006F1D95 /* ApiClient.swift in Sources */,
+				C2BCF239290A8F1D00B2BC2F /* NSAttributedString+Extensions.swift in Sources */,
+				C2BCF241290A949500B2BC2F /* GenericResponseParser.swift in Sources */,
 				1B26AF3F28F05750006F1D95 /* RoomDetailsCell.swift in Sources */,
 				1BF4D48728EE88D700AEBDB5 /* PeopleViewModel.swift in Sources */,
+				C2BCF25D290FE22100B2BC2F /* RoomsParser.swift in Sources */,
+				C2BCF23F290A944800B2BC2F /* GenericCallConfig.swift in Sources */,
+				C2BCF24F290EBD4E00B2BC2F /* AppConstant.swift in Sources */,
+				C2BCF25B290FE21500B2BC2F /* RoomsResponse.swift in Sources */,
 				1B26AF3328F02523006F1D95 /* UIViewController+Extensions.swift in Sources */,
 				1BF4D49228EEE42C00AEBDB5 /* Person.swift in Sources */,
 				1BF4D40328ED21E600AEBDB5 /* TabBarController.swift in Sources */,
 				1B36651028F0641D005E8103 /* UIImage+Extension.swift in Sources */,
+				C2BCF251290ED02300B2BC2F /* PeopleRequest.swift in Sources */,
+				C2BCF257290FE0C400B2BC2F /* RoomsRequest.swift in Sources */,
 				1B26AF3B28F04D86006F1D95 /* DetailsTableViewCell.swift in Sources */,
+				C2BCF24D290A96F100B2BC2F /* AppRequestBuilder.swift in Sources */,
 				1BF4D3D128ED206800AEBDB5 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -428,7 +571,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1BF4D3E628ED206D00AEBDB5 /* VMDirectoryTests.swift in Sources */,
+				C2CCCB812913D138002BD362 /* PersonDetailsViewModelTests.swift in Sources */,
+				C2CCCB8D29141008002BD362 /* MockRoomsRequest.swift in Sources */,
+				C2CCCB862913D82C002BD362 /* PeopleViewModelTest.swift in Sources */,
+				C2CCCB7F2913CEE4002BD362 /* PersonDetailsViewControllerFactoryMock.swift in Sources */,
+				C2CCCB882913D853002BD362 /* MockPeopleRequest.swift in Sources */,
+				C2CCCB8B29140F63002BD362 /* RoomsViewModelTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

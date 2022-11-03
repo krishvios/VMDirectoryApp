@@ -8,11 +8,14 @@
 import Foundation
 
 class PeopleViewModel {
-    var datas: [Person] = [Person]()
+    
+    var people: [Person] = [Person]()
     var reloadTableView: (()->())?
     var showError: (()->())?
     var showLoading: (()->())?
     var hideLoading: (()->())?
+    private let getPeopleRequest = PeopleRequest()
+    private var task: URLSessionDataTask?
 
     private var cellViewModels: [PersonListCellViewModel] = [PersonListCellViewModel]() {
         didSet {
@@ -20,17 +23,17 @@ class PeopleViewModel {
         }
     }
 
-    func getData(){
+    func fetchPeopleData() {
         showLoading?()
-        ApiClient.getPeopleDataFromServer { (success, data) in
+        self.task = self.getPeopleRequest.query(success: { [weak self] (response) in
+            self?.task = nil
+            self?.createCell(datas: response.people)
+            self?.hideLoading?()
+        }, failure: { [weak self]  (error) in
+            guard let `self` = self else { return }
+            self.task = nil
             self.hideLoading?()
-            if success {
-                self.createCell(datas: data!)
-                self.reloadTableView?()
-            } else {
-                self.showError?()
-            }
-        }
+        })
     }
     
     var numberOfCells: Int {
@@ -42,8 +45,9 @@ class PeopleViewModel {
         return cellViewModels[indexPath.row]
     }
     
-    func createCell(datas: [Person]){
-        self.datas = datas
+    func createCell(datas: [Person]) {
+        
+        self.people = datas
         var vms = [PersonListCellViewModel]()
         for data in datas {
             vms.append(PersonListCellViewModel(createdAt: data.createdAt ?? "",
@@ -57,4 +61,5 @@ class PeopleViewModel {
         }
         cellViewModels = vms
     }
+    
 }
